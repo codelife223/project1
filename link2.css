@@ -1,0 +1,280 @@
+/* Original CSS Code */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: black;
+}
+
+/* Header styling */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    background-color: green;
+}
+
+/* Main content styling */
+main {
+    padding: 80px 20px 60px; /* Adjust padding for header and footer */
+    background-color: gray; /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #fff; /* Ensures text is readable over the background image */
+}
+
+.addres {
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* About Section */
+.about-section {
+    padding: 40px;
+    background: #ffffff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+}
+
+.about-section h3 {
+    margin-top: 30px;
+    color: #2c3e50;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info h4 {
+    margin-top: 30px;
+    color: #2c3e50;
+    background-color: aqua;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
+
+/* Buy Now Button Styling */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+.header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.header nav a :hover{
+    background-color:green;
+}
+.purchase-info {
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hidden{
+    display: none;
+  }
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    text-align: left;
+}
+
+form input,
+form textarea,
+form select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form .submit-btn {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form .submit-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Fixed Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Styling */
+
+/* Adjusts for screens 768px and smaller */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 1.2rem;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 5px 0;
+    }
+    main {
+        padding: 100px 10px 70px;
+    }
+    .about-section {
+        padding: 20px;
+        margin: 10px;
+    }
+    .purchase-info {
+        width: 90%;
+        padding: 15px;
+    }
+    form input,
+    form textarea,
+    form select {
+        font-size: 14px;
+    }
+    form .submit-btn {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+/* Adjusts for screens 480px and smaller */
+@media (max-width: 480px) {
+    header {
+        padding: 5px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .logo h1 {
+        font-size: 1rem;
+        margin: 0;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    header nav ul li {
+        margin: 5px 0;
+    }
+    main {
+        padding: 90px 5px 60px;
+    }
+    .about-section h2 {
+        font-size: 1.5em;
+    }
+    .about-section {
+        padding: 15px;
+        margin: 5px;
+    }
+    form input,
+    form textarea,
+    form select {
+        font-size: 14px;
+        padding: 6px;
+    }
+    form .submit-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+    footer {
+        padding: 5px 0;
+    }
+}

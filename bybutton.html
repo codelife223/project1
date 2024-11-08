@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N& J Company</title>
+    <link rel="stylesheet" href="link2.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>N & J COMPANY</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="location.html">Location</a>
+            <a href="about.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div id="container">
+        <h2>Car Purchase</h2>
+        <p>Thank you for choosing our Car</p>
+
+        <div class="purchase-info">
+            <p><strong>Price:</strong> $XX,XXX</p> <!-- Replace XX,XXX with the actual price dynamically -->
+
+            <!-- Purchase Form -->
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <label for="payment">Payment Method:</label>
+                <select id="payment" name="payment">
+                    <option value="credit">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank">Bank Transfer</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Complete Purchase</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Fixed Footer -->
+    <div class="footer">
+        <p>&copy; 2023 N & J COMPANY. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
